@@ -1,0 +1,133 @@
+:root{--accent:#E7473C;--dark:#F0F0F0;--muted:#666}
+
+body{
+    font-family:Inter, system-ui, Arial, sans-serif; 
+    margin:0; 
+    background:#f7faf7; 
+    color:#122;
+}
+
+header{background:linear-gradient(90deg,var(--accent),#E7473C); color:#F0F0F0; padding:18px}
+
+header h1{margin:0;font-size:1.4rem; display:inline-block; vertical-align:middles; font-weight:700}
+
+nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:8px 0 0}
+
+nav a{color:rgba(0,0,0,.6);text-decoration:none}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top:0;color:var(--dark);
+    margin-bottom: 10px;
+    border-radius: 18px;
+    color: #E7473C;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #E7473C;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #E7473C;
+    color: #F0F0F0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E7473C;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #E7473C;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #E7473C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#E7473C;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E7473C;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+
+.imglogo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius:  8px;
+}
+
+.lendo {
+    height: 200px;
+    width: 300px;
+    margin-left:100px;
+    border-radius: 18px;
+    margin: 10px 0;
+}
+
+
+
+.fotofundo {background-image: url("src/img/fundo-header.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;}
