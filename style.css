@@ -1,10 +1,14 @@
 :root{--accent:#E7473C;--dark:#F0F0F0;--muted:#666}
 
 body{
-    font-family:Inter, system-ui, Arial, sans-serif; 
-    margin:0; 
-    background:#f7faf7; 
-    color:#122;
+      background-image: url('img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Inter, system-ui, Arial, sans-serif;
+    margin: 0;
+    color: #122;
+
 }
 
 header{background:linear-gradient(90deg,var(--accent),#E7473C); color:#F0F0F0; padding:18px}
@@ -28,7 +32,7 @@ section {
 }
 
 section h2 {
-    margin-top:0;color:var(--dark);
+    margin-top:20px;color:var(--dark);
     margin-bottom: 10px;
     border-radius: 18px;
     color: #E7473C;
@@ -94,7 +98,7 @@ footer {
     padding: 20px;
     background-color: #E7473C;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 100px;
     border-radius: 8px;
 }
 
@@ -117,17 +121,14 @@ footer {
     border-radius:  8px;
 }
 
-.lendo {
-    height: 200px;
+.lendo img {
+    height: 300px;
     width: 300px;
-    margin-left:100px;
     border-radius: 18px;
     margin: 10px 0;
 }
 
-
-
-.fotofundo {background-image: url("src/img/fundo-header.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;}
+.lendo {
+    text-align: center;
+    
+}
