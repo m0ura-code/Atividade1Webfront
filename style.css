@@ -1,57 +1,100 @@
-:root{--accent:#E7473C;--dark:#F0F0F0;--muted:#666}
+:root{
+    --base:#E7473C;
+    --red2:#8B0000;
+    --white:#F0F0F0;
+    --redtomato:#FF6347;
+    --redbrown:#A52A2A;
+    --whitesmoke:#F5F5F5;
+    --salmon:#FA8072;
+    --darkgrey:#A9A9A9;
+    --dark: #0000008f;
+
+
+    --fontsizep: 5px;
+    --fontsizem: 8px;
+    --fontsizeg: 10px;
+    --fontsizegg: 12px;
+    --fontsizeg1: 15px;
+    --fontsizeg2: 18px;
+    --fontsizeg3: 20px;
+    --fontsizeg4: 25px;
+
+    --space1: 5px;
+    --space2: 8px;
+    --space3: 10px;
+    --space4: 12px;
+    --space5: 18px;
+    --space6: 20px;
+    --space7: 100px;
+    --space8: 300px;
+}
 
 body{
-      background-image: url('img/fundo.png');
+    background-image: url('img/fundo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: Inter, system-ui, Arial, sans-serif;
     margin: 0;
-    color: #122;
+    
 
 }
 
-header{background:linear-gradient(90deg,var(--accent),#E7473C); color:#F0F0F0; padding:18px}
+header{background:linear-gradient(90deg),var(--redbrown); 
+       color:var(--white);
+       padding:var(--space5)}
 
-header h1{margin:0;font-size:1.4rem; display:inline-block; vertical-align:middles; font-weight:700}
+header h1{
+    margin:0;
+    font-size:var(--fontsizeg4); 
+    display:inline-block; 
+    vertical-align: middle; 
+    font-weight:700;
+    color: var(--redbrown)}
 
-nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:8px 0 0}
+nav ul{
+    display:flex;
+    gap:var(--space4);
+    list-style:none;
+    padding:0;
+    margin:var(--space2) 0 0}
 
-nav a{color:rgba(0,0,0,.6);text-decoration:none}
+nav a{color:var(--dark);
+    text-decoration:none}
 
 nav a:hover {
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 18px;
+    background-color:var(--white);
+    padding: var(--space6);
+    margin: var(--space6) 0;
+    border-radius: var(--space5);
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
 }
 
 section h2 {
-    margin-top:20px;color:var(--dark);
-    margin-bottom: 10px;
-    border-radius: 18px;
-    color: #E7473C;
+    margin-top:var(--space6);
+    color:var(--dark);
+    margin-bottom: var(--space3);
+    border-radius: var(--space3);
+    color: var(--base);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 20px;
-    border-radius: 8px;
+    gap: var(--space3); 
+    background-color: #ffffffcc; 
+    padding: var(--space6);
+    border-radius: var(--space2);
 }
 
 input, textarea {
-    padding: 10px;
-    border: 1px solid #E7473C;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: var(--space3);
+    border: 1px solid var(--base);
+    border-radius: var(--space1);
+    font-size: var(--space5);
 }
 
 button {
